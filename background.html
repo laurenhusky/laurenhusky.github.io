@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Background | Lauren Xiao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="site-name">Lauren Xiao</a>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="background.html" class="nav-link current">Background</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <h1>My Background</h1>
+
+        <section>
+            <h2>My Family</h2>
+            <img src="family.jpeg" alt="Image of my family" class="wide-image">
+            <p>That’s me on the left! This picture shows my immediate family: my mom, my dad, my older sister Rachel, and my younger sister Victoria. My extended family is very large. My mom has five siblings and my dad has four, and I also have four grandparents, so family gatherings are always lively. My parents immigrated from Fuzhou, China and met in New York City, where I grew up and still live today. Being from Flushing, Queens means I’m surrounded by delicious food and a large asian cultural hub.</p>
+            <p>My sisters and I are each two years apart, born in 2004, 2006, and 2008. I love being one of three daughters, and I especially love being the middle child. I get to look up to my older sister while also being a mentor to my younger sister. We all major in something technology-related, with Rachel getting her bachelor’s in Computer Science and Victoria starting her first year of college doing Computer Engineering. However, we have pretty different interests: Victoria is extremely sporty, playing soccer and basketball, and running track, and Rachel is adventurous, loving to travel and learn new skills like skiing and piano. Having two sisters means never having a dull moment at home. A typical day together involves card games, boba runs, scrimmages, and movie nights.</p>
+        </section>
+
+        <section>
+            <h2>My Extended Family</h2>
+            <p>My cousins on my mom's side from oldest to youngest:</p>
+            <ol class="cousin-list">
+                <li>Vivian (33)</li>
+                <li>Vanessa (31)</li>
+                <li>Nicole (28)</li>
+                <li>Ashley (25)</li>
+                <li>Rachel (my sister; 22)</li>
+                <li>Michelle (21)</li>
+                <li>Ian (20)</li>
+                <li>Me! (20)</li>
+                <li>Ryan (19)</li>
+                <li>Victoria (my sister; 18)</li>
+                <li>Nicholas (11)</li>
+                <li>Phoenix (9)</li>
+
+            </ol>
+        </section>
+
+        <section>
+            <h2>Cruise Counter</h2>
+            <p>Cruises are my family's favorite vaction to take. We have been on many in the last 20 years, and have repeated some ships as well.</p>
+            <div class="sort-controls" role="group" aria-label="Sort ships">
+                <span>Sort by:</span>
+                <button type="button" class="sort-btn" data-sort="count">Most cruises</button>
+                <button type="button" class="sort-btn" data-sort="name">Name (A–Z)</button>
+                <button type="button" class="sort-btn" data-sort="line">Cruise line</button>
+            </div>
+            <div id="d3-chart" class="chart-box"></div>
+        </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <h2>Contact Me</h2>
+        <ul class="contact-list">
+            <li><a href="mailto:xiao.la@northeastern.edu">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/lauren-xiao/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <script src="interactivity.js"></script>
+</body>
+</html>
